@@ -1,0 +1,11 @@
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/bin/Debug/netcoreapp2.1/tasklist.deps.json
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/bin/Debug/netcoreapp2.1/tasklist.runtimeconfig.json
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/bin/Debug/netcoreapp2.1/tasklist.runtimeconfig.dev.json
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/bin/Debug/netcoreapp2.1/tasklist.dll
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/bin/Debug/netcoreapp2.1/tasklist.pdb
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/obj/Debug/netcoreapp2.1/tasklist.csprojAssemblyReference.cache
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/obj/Debug/netcoreapp2.1/tasklist.csproj.CoreCompileInputs.cache
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/obj/Debug/netcoreapp2.1/tasklist.AssemblyInfoInputs.cache
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/obj/Debug/netcoreapp2.1/tasklist.AssemblyInfo.cs
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/obj/Debug/netcoreapp2.1/tasklist.dll
+/home/master/Documents/bootcamp/2020.01.31 TaskList/tasklist/obj/Debug/netcoreapp2.1/tasklist.pdb
