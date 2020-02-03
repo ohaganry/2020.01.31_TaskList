@@ -41,7 +41,7 @@ namespace tasklist
         {
             DisplayList(listOfTasks);
             Console.ForegroundColor = ConsoleColor.Yellow;
-            int input = Methods.CheckRange(int.Parse(Methods.GetUserInput("Which task would you like to delete?")), 1, listOfTasks.Count);
+            int input = Methods.CheckRange(Methods.GetUserInput("Which task would you like to delete?"), 1, listOfTasks.Count);
             Console.ForegroundColor = ConsoleColor.Red;
             bool confirm = Methods.ValidateInput("Are you sure you wish to delete this task?");
             if(confirm)
@@ -69,7 +69,7 @@ namespace tasklist
         public static void FilterList(List<ToDo> listOfTasks)
         {
             int i = 1;
-            int option = Methods.CheckRange(int.Parse(Methods.GetUserInput("Filter List options\n1. Name\n2. Due Date\n3. Exit")), 1, 3);
+            int option = Methods.CheckRange(Methods.GetUserInput("Filter List options\n1. Name\n2. Due Date\n3. Exit"), 1, 3);
             switch(option)
             {
                 case 1:
@@ -108,8 +108,8 @@ namespace tasklist
         {
            DisplayList(listOfTasks);
            Console.ForegroundColor = ConsoleColor.Yellow;
-           int taskNumber = Methods.CheckRange(int.Parse(Methods.GetUserInput("Which task do you want to edit?")), 1, listOfTasks.Count);
-           int propNumber = Methods.CheckRange(int.Parse(Methods.GetUserInput("Will you change the...\n1. Name\n2. Due Date\n3. Description")), 1, 3);
+           int taskNumber = Methods.CheckRange(Methods.GetUserInput("Which task do you want to edit?"), 1, listOfTasks.Count);
+           int propNumber = Methods.CheckRange(Methods.GetUserInput("Will you change the...\n1. Name\n2. Due Date\n3. Description"), 1, 3);
            if(propNumber == 1)
            {
                Console.ForegroundColor = ConsoleColor.Yellow;

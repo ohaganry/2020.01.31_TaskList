@@ -20,7 +20,7 @@ namespace tasklist
             {
                 Console.WriteLine("MENU\n1. List Tasks\n2. Add Task\n3. Edit Task\n4. Delete Task\n5. Mark Task Complete\n6. Quit");
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                int menu1 = Methods.CheckRange(int.Parse(Methods.GetUserInput("Choose an item from the menu")), 1, 6);
+                int menu1 = Methods.CheckRange(Methods.GetUserInput("Choose an item from the menu"), 1, 6);
 
                 switch(menu1)
                 {
@@ -44,7 +44,7 @@ namespace tasklist
                     case 5:
                     ToDo.DisplayList(tasks);
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    int input = Methods.CheckRange(int.Parse(Methods.GetUserInput("Which task has been completed")), 1, tasks.Count);
+                    int input = Methods.CheckRange(Methods.GetUserInput("Which task has been completed"), 1, tasks.Count);
                     tasks[input - 1].MarkComplete();
                     break;
 

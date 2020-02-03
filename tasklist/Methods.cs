@@ -34,20 +34,28 @@ namespace tasklist
             }
         } 
 
-        public static int CheckRange(int number, int rangeLower, int rangeUpper)
+        public static int CheckRange(string input, int rangeLower, int rangeUpper)
         {
-            if(number >= rangeLower && number <= rangeUpper)
+            int number;
+            if(int.TryParse(input, out number))
             {
-                return number;
+                if(number >= rangeLower && number <= rangeUpper)
+                {
+                    return number;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    input = GetUserInput($"Invalid Input. Input must be {rangeLower}-{rangeUpper}");
+                    return CheckRange(input, rangeLower, rangeUpper);
+                }
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Invalid Input. Input must be {rangeLower}-{rangeUpper}");
-                Console.ResetColor();
-                number = int.Parse(Console.ReadLine());
-                return CheckRange(number, rangeLower, rangeUpper);
+                input = GetUserInput($"Invalid Input. Input must be {rangeLower}-{rangeUpper}");
+                return CheckRange(input, rangeLower, rangeUpper);
             }
-        }      
+        }            
     }
 }
